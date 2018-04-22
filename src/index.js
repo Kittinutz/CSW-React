@@ -8,7 +8,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import reducers from './reducers';
 const createStoreApplyMiddleware = applyMiddleware(Promise)(createStore);
-const store = createStoreApplyMiddleware(reducers);
+const store = createStoreApplyMiddleware(reducers,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 ReactDOM.render(
   <Provider store={store}>
   <App />
