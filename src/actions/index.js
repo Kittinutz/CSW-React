@@ -37,3 +37,12 @@ export function deleteUser(id) {
     }
   
 }
+
+export function updateUser(id,payload) {
+  const response = axios.put(`${TEST_URL}/${id}`,payload)
+  return {
+    type:FETCH_USERS,
+    payload:response
+  }
+  
+}
