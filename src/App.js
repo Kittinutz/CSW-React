@@ -124,7 +124,7 @@ const Tester = (props) => {
   const {name, surname} = props;
   return (
     <div>
-      <h1>Helloworld {name + " " + surname}</h1>
+      <h1>Hello Man {name + " " + surname}</h1>
     </div>
   )
 }
